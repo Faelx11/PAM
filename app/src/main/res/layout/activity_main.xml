@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/dice_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/empty_dice" />
+
+    <Button
+        android:id="@+id/roll_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/roll_label" />
+
+    <EditText
+        android:id="@+id/edtNumber"
+        android:inputType="number"
+        android:layout_gravity="center_horizontal"
+        android:digits="1,2,3,4,5,6"
+        android:labelFor="@id/edtNumber"
+        android:autofillHints="name"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
